@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 0.25em;
+}
+
+h2 {
+    color: black;
+}
+
+button {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+}
