@@ -1,23 +1,20 @@
-body {
-    background-color: white;
+
+html, body {
+    margin: 0px;
+    height: 100%;
 }
 
-header {
+.page-wrapper {
+    /* fit full screen */
     background-color: black;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    padding: 17.6px 52.8px;
+}
+
+.main-container {
     color: white;
-    padding: 0.25em;
-}
-
-h2 {
-    color: black;
-}
-
-button {
-    background-color: white;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 0.5em;
 }
