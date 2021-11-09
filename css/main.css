@@ -1,3 +1,39 @@
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: cornflowerblue;
+	text-align: left;
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
 .page_wrapper {
 	position: relative;
 	overflow: hidden;
@@ -70,6 +106,40 @@
 	color: orange;
 }
 
+.MyMain {
+	margin: 0 auto;
+	max-width: 60rem;
+	width: 100%;
+}
+
+.content_box {
+	padding: 1.5rem 0 2rem;
+}
+
+.headline_focus {
+	color: #fff;
+	font-size: 2.2em;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	line-height: 1.1em;
+	margin: 0;
+	position: relative;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+
+.headline_focus_super_big {
+	font-size: 3em;
+	line-height: 0.9;
+	padding-bottom: 0.7em;
+}
+
+.content_box_subheadline_with_button {
+	display: inline;
+	margin-right: 70px;
+}
 /* ------------------------------------------------------------------ */
 @media screen and (min-width: 21rem) {
 	.page_container {
@@ -83,7 +153,46 @@
 	}
 }
 
-/* :root {
+@media screen and (min-width: 64rem) {
+	.content_box {
+		max-width: 46rem;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 21rem) {
+	.headline_focus_super_big {
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (min-width: 21rem) {
+	.headline_focus_super_big {
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (min-width: 37rem) {
+	.headline_focus_super_big {
+		font-size: 3.75em;
+	}
+}
+
+@media screen and (min-width: 50rem) {
+	.headline_focus_super_big {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 64rem) {
+	.headline_focus_super_big {
+		font-size: 4.25em;
+		line-height: 0.85;
+	}
+}
+
+/* 
+:root {
 	--blue: #007bff;
 	--indigo: #6610f2;
 	--purple: #6f42c1;
@@ -117,20 +226,6 @@
 		"Liberation Mono", "Courier New", monospace;
 }
 
-*,
-:after,
-:before {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-html {
-	font-family: sans-serif;
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent;
-}
-
 article,
 aside,
 figcaption,
@@ -144,18 +239,6 @@ section {
 	display: block;
 }
 
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-		Helvetica Neue, Arial, Noto Sans, sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-	background-color: #fff;
-}
-
 [tabindex="-1"]:focus {
 	outline: 0 !important;
 }
@@ -165,16 +248,6 @@ hr {
 	box-sizing: content-box;
 	height: 0;
 	overflow: visible;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
 }
 
 p {

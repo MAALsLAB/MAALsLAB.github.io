@@ -1,13 +1,4 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-html {
-	line-height: 1.15;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
-body {
-	margin: 0;
-}
 
 article,
 aside,
@@ -286,12 +277,6 @@ a:hover {
 	border-bottom-style: solid;
 }
 
-.l-main {
-	margin: 0 auto;
-	max-width: 60rem;
-	width: 100%;
-}
-
 #maal > div > div.page_container.false > main > div > div > div > li > a > svg {
 	margin-top: 30px;
 	margin-left: 30px;
@@ -468,44 +453,8 @@ a:hover {
 	color: #fff;
 }
 
-.c-content-box {
-	padding: 1.5rem 0 2rem;
-}
-
-.c-content-box__subheadline--with-button {
-	display: inline;
-	margin-right: 70px;
-}
-
-@media screen and (min-width: 64rem) {
-	.c-content-box {
-		max-width: 46rem;
-		margin: 0 auto;
-	}
-}
-
-.c-headline-focus {
-	color: #fff;
-	font-size: 2.2em;
-	font-weight: 800;
-	letter-spacing: -0.03em;
-	line-height: 1.1em;
-	margin: 0;
-	position: relative;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	-webkit-transition-timing-function: ease;
-	transition-timing-function: ease;
-}
-
 .c-headline-focus span {
 	font-weight: 300;
-}
-
-.c-headline-focus--super-big {
-	font-size: 3em;
-	line-height: 0.9;
-	padding-bottom: 0.7em;
 }
 
 .c-headline-focus--initial-state {
@@ -558,31 +507,6 @@ a:hover {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 		color: #666;
-	}
-}
-
-@media screen and (min-width: 21rem) {
-	.c-headline-focus--super-big {
-		font-size: 3.5em;
-	}
-}
-
-@media screen and (min-width: 37rem) {
-	.c-headline-focus--super-big {
-		font-size: 3.75em;
-	}
-}
-
-@media screen and (min-width: 50rem) {
-	.c-headline-focus--super-big {
-		font-size: 4em;
-	}
-}
-
-@media screen and (min-width: 64rem) {
-	.c-headline-focus--super-big {
-		font-size: 4.25em;
-		line-height: 0.85;
 	}
 }
 
