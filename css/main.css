@@ -1,20 +1,20 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : Oct 30, 2021, 9:25:34 AM
     Author     : Mohammad Ahmad ALhamad
 */
 
-* {
-	box-sizing: border-box;
-}
+/********************************************
+																	Font Import
+********************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 /********************************************
 															General setup
 ********************************************/
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	margin: 0;
@@ -31,135 +31,80 @@ body {
 	margin: 0 auto;
 	background-color: black;
 }
-
 /********************************************
-																	Typography
+															Navigation Bar
 ********************************************/
-h1,
-h2,
-h3 {
-	font-family: "Sonsie One", cursive;
-	color: #2a2a2a;
+.topNav {
+	overflow: hidden;
+	background-color: #333;
 }
 
-p,
-input,
-li {
-	font-family: "Open Sans Condensed", sans-serif;
-	color: #2a2a2a;
-}
-
-h1 {
-	font-size: 4rem;
+.topNav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
 	text-align: center;
-	color: white;
-	text-shadow: 2px 2px 10px black;
-}
-
-h2 {
-	font-size: 3rem;
-	text-align: center;
-}
-
-h3 {
-	font-size: 2.2rem;
-}
-
-p,
-li {
-	font-size: 1.6rem;
-	line-height: 1.5;
-}
-
-/********************************************
-															Header Layout
-********************************************/
-nav,
-section,
-aside,
-footer {
-	background-color: black;
-	padding: 1%;
-}
-
-nav {
-	height: 50px;
-	background-color: darkorange;
-	display: flex;
-	margin-bottom: 10px;
-}
-
-nav ul {
-	padding: 0;
-	list-style-type: none;
-	flex: 2;
-}
-
-nav li {
-	display: inline;
-	text-align: center;
-	flex: 1;
-}
-
-nav a {
-	display: inline-block;
-	font-size: 2rem;
-	text-transform: uppercase;
+	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}
+
+.topNavRight {
+	float: right;
+}
+
+.topNav i {
+	padding: 0px 5px;
+}
+
+.topNav a:hover {
+	background-color: white;
 	color: black;
 }
 
-nav form {
-	flex: 1;
-	display: flex;
-	align-items: center;
-	height: 100%;
-	padding: 0 2em;
+.topNav a.active {
+	background-color: black;
+	color: red;
 }
 
-input {
-	font-size: 1.6rem;
-	height: 32px;
+.topNav .dropIcon {
+	display: none;
 }
 
-input[type="search"] {
-	flex: 3;
+@media screen and (max-width: 600px) {
+	.topNav a:not(:first-child) {
+		display: none;
+	}
+
+	.topNav a.dropIcon {
+		float: right;
+		display: block;
+	}
 }
 
-input[type="submit"] {
-	flex: 1;
-	margin-left: 1rem;
-	background: tomato;
-	color: white;
-}
-
-/********************************************
-																Main Layout
-********************************************/
-main {
-	display: flex;
-}
-
-section {
-	flex: 4;
-}
-
-aside {
-	flex: 1;
-	margin-left: 10px;
-	background-color: red;
-}
-
-aside li {
-	padding-bottom: 10px;
-}
-
-footer {
-	margin-top: 10px;
+@media screen and (max-width: 600px) {
+	.topNav.responsive {
+		position: relative;
+	}
+	.topNav.responsive a.dropIcon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topNav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topNavRight {
+		float: none;
+	}
 }
 
 /********************************************
-												button circular spin
+																	RGB Button
 ********************************************/
 .rgb_button {
 	background-color: transparent;
@@ -217,7 +162,6 @@ footer {
 	animation-name: rgb;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	/* animation: rgb 6s linear infinite; */
 }
 
 @keyframes rgb {
@@ -228,4 +172,66 @@ footer {
 	to {
 		background-position: 100% 50%;
 	}
+}
+
+/********************************************
+																Side Message
+********************************************/
+.sideMessage {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #1b1b1b;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.sideMessage h3 {
+	font-size: 3rem;
+	line-height: 2rem;
+	font-weight: 900;
+	color: #ff9a00;
+	padding: 0 30px;
+}
+
+.sideMessage a {
+	color: #1c7fee;
+}
+
+.sideMessage p {
+	font-weight: 100;
+	font-size: 2rem;
+	line-height: 2rem;
+	padding: 5px 50px;
+	color: #4fdc4a;
+}
+
+.sideMessage p b {
+	color: red;
+}
+
+.message_wrapper {
+	padding-top: 80px;
+}
+
+.sideMessage .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.screen_overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	left: 0;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }

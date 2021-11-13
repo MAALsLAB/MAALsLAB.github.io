@@ -4,33 +4,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" , />
 		<link rel="stylesheet" href="./css/main.css" />
-		<script src="https://kit.fontawesome.com/ae2f07df55.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/ae2f07df55.js"
+			crossorigin="anonymous"
+		></script>
 		<title>MAAL's LAB</title>
 	</head>
 
 	<body>
-		<!-- Here is our main header that is used across all the pages of our website -->
-		<!-- <header>
-			<h1>This is the Header</h1>
-		</header> -->
-		<!-- Here is our Navigation bar that is used across all the pages of our website -->
-		<nav>
-			<ul>
-				<li>
-					<a href="#"><i class="fas fa-home"></i>Home</a>
-				</li>
-				<li>
-					<a href="#"><i class="fas fa-rocket"></i>Portfolio</a>
-				</li>
-				<li>
-					<a href="#"><i class="fas fa-robot"></i>Skillset</a>
-				</li>
-				<li>
-					<a href="#"><i class="fas fa-id-card"></i>Contact</a>
-				</li>
-			</ul>
+		<!-- Navigation Bar -->
+		<nav class="topNav" id="myNav">
+			<div class="topNavRight">
+				<a href="#" class="active"><i class="fas fa-home"></i>Home</a>
+				<a href="#"><i class="fas fa-rocket"></i>Portfolio</a>
+				<a href="#"><i class="fas fa-robot"></i>Skillset</a>
+				<a href="#"><i class="fas fa-id-card"></i>Contact</a>
+				<a href="javascript:void(0);" class="dropIcon" onclick="openMenu()"
+					><i class="fas fa-sort-amount-down"></i
+				></a>
+			</div>
 		</nav>
-		<!-- Here is our page's main content -->
+		<!-- Main Page -->
 		<main>
 			<!-- Page Wrapper -->
 			<section>
@@ -39,13 +33,46 @@
 					<h2>Hi, my name is Mohammad</h2>
 					<h1>I am a Hardware and Software Developer</h1>
 					<h2>and I love coding, robotics, and rockets</h2>
-
-					<div class="button_wrapper rgb_effect">
-						<button class="rgb_button">
+					<!-- Side Message -->
+					<div
+						id="mySideMessage"
+						class="sideMessage"
+						onclick="closeMessage()"
+						&times;
+					>
+						<!-- RGB Close Side Message Button -->
+						<div class="button_wrapper rgb_effect closebtn" id="close">
+							<button class="rgb_button" onclick="closeMessage()">
+								<i class="fas fa-times-circle fa-5x"></i>
+							</button>
+						</div>
+						<!-- Side Message Content -->
+						<div class="message_wrapper">
+							<h3><b>I'm glad</b></h3>
+							<p>
+								that you're interested in my work.<br /><br />
+								There's something I want you to remember while you're going over
+								the website.<br /><br />
+								Currently, I'm open to
+								<b>collaborating on</b> projects.<br /><br />
+								If you believe I would be a good fit, drop me a m essage at
+								<b
+									><a href="mailto:maalslab@gmail.com"
+										>maalslab@gmail.com</a
+									> </b
+								>.<br /><br />
+								Thank you. Now, you're free to go further.
+							</p>
+						</div>
+					</div>
+					<!-- RGB Open Side Message Button -->
+					<div class="button_wrapper rgb_effect" id="open">
+						<button class="rgb_button" onclick="openMessae()">
 							<i class="fas fa-arrow-alt-circle-right fa-5x"></i>
 						</button>
 					</div>
-					<div class="ro9w">
+
+					<div class="row">
 						<div class="column">
 							<li>
 								<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -53,7 +80,9 @@
 						</div>
 						<div class="column">
 							<li>
-								<a href="#" target="_blank"><i class="fab fa-github-alt"></i></a>
+								<a href="#" target="_blank"
+									><i class="fab fa-github-alt"></i
+								></a>
 							</li>
 						</div>
 						<div class="column">
@@ -63,24 +92,62 @@
 						</div>
 					</div>
 				</article>
+				<!-- Scree Overlay to Dimm main contetn When Side Message is Opend -->
+				<div class="screen_overlay" id="screenOverlay"></div>
 			</section>
 		</main>
 		<!-- The main footer that is used across all the pages of the website -->
 		<footer>
 			<p>
-				<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">
+				Built with html, css and JS. Hosted on Netlify. The code is open source
+				and available at Github
+				<a
+					rel="license"
+					target="_blank"
+					href="http://creativecommons.org/licenses/by/4.0/"
+				>
 					<img
 						alt="Creative Commons License"
 						style="border-width: 0"
 						src="https://i.creativecommons.org/l/by/4.0/80x15.png"
 					/>
 				</a>
-				<a href="https://maalslab.github.io/" target="_blank"> MAAL's LAB<br /> </a>
+				<a href="https://maalslab.github.io/" target="_blank">
+					MAAL's LAB<br />
+				</a>
 				This work is licensed under a
-				<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">
+				<a
+					rel="license"
+					target="_blank"
+					href="http://creativecommons.org/licenses/by/4.0/"
+				>
 					Creative Commons Attribution 4.0 International License </a
 				>.
 			</p>
 		</footer>
+
+		<script>
+			function openMessae() {
+				document.getElementById("mySideMessage").style.width = "600px";
+				document.getElementById("open").style.visibility = "hidden";
+				document.getElementById("close").style.visibility = "visible";
+				document.getElementById("screenOverlay").style.visibility = "visible";
+			}
+			function closeMessage() {
+				document.getElementById("mySideMessage").style.width = "0";
+				document.getElementById("open").style.visibility = "visible";
+				document.getElementById("close").style.visibility = "hidden";
+				document.getElementById("screenOverlay").style.visibility = "hidden";
+			}
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function openMenu() {
+				var x = document.getElementById("myNav");
+				if (x.className === "topNav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topNav";
+				}
+			}
+		</script>
 	</body>
 </html>
