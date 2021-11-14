@@ -4,10 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" , />
 		<link rel="stylesheet" href="./css/main.css" />
-		<script
-			src="https://kit.fontawesome.com/ae2f07df55.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/ae2f07df55.js" crossorigin="anonymous"></script>
 		<title>MAAL's LAB</title>
 	</head>
 
@@ -19,9 +16,7 @@
 				<a href="#"><i class="fas fa-rocket"></i>Portfolio</a>
 				<a href="#"><i class="fas fa-robot"></i>Skillset</a>
 				<a href="#"><i class="fas fa-id-card"></i>Contact</a>
-				<a href="javascript:void(0);" class="dropIcon" onclick="openMenu()"
-					><i class="fas fa-sort-amount-down"></i
-				></a>
+				<a href="javascript:void(0);" class="dropIcon" onclick="openMenu()"><i class="fas fa-sort-amount-down"></i></a>
 			</div>
 		</nav>
 		<!-- Main Page -->
@@ -29,17 +24,23 @@
 			<!-- Page Wrapper -->
 			<section>
 				<!-- Introduction -->
-				<article class="introduction">
-					<h2>Hi, my name is Mohammad</h2>
-					<h1>I am a Hardware and Software Developer</h1>
-					<h2>and I love coding, robotics, and rockets</h2>
+				<article>
+					<!-- Introduction Wrapper -->
+					<div class="introduction">
+						<h2>Hi, my name is Mohammad</h2>
+						<h1>I am a Hardware and Software Developer</h1>
+						<h2>and I love coding, robotics, and rockets</h2>
+						<!-- RGB Open Side Message Button -->
+						<div class="RGB_position">
+							<div class="button_wrapper rgb_effect" id="open">
+								<button class="rgb_button" onclick="openMessae()">
+									<i class="fas fa-arrow-alt-circle-right fa-5x"></i>
+								</button>
+							</div>
+						</div>
+					</div>
 					<!-- Side Message -->
-					<div
-						id="mySideMessage"
-						class="sideMessage"
-						onclick="closeMessage()"
-						&times;
-					>
+					<div id="mySideMessage" class="sideMessage" onclick="closeMessage()" &times;>
 						<!-- RGB Close Side Message Button -->
 						<div class="button_wrapper rgb_effect closebtn" id="close">
 							<button class="rgb_button" onclick="closeMessage()">
@@ -51,45 +52,20 @@
 							<h3><b>I'm glad</b></h3>
 							<p>
 								that you're interested in my work.<br /><br />
-								There's something I want you to remember while you're going over
-								the website.<br /><br />
+								There's something I want you to remember while you're going over the website.<br /><br />
 								Currently, I'm open to
 								<b>collaborating on</b> projects.<br /><br />
 								If you believe I would be a good fit, drop me a m essage at
-								<b
-									><a href="mailto:maalslab@gmail.com"
-										>maalslab@gmail.com</a
-									> </b
-								>.<br /><br />
+								<b><a href="mailto:maalslab@gmail.com">maalslab@gmail.com</a> </b>.<br /><br />
 								Thank you. Now, you're free to go further.
 							</p>
 						</div>
 					</div>
-					<!-- RGB Open Side Message Button -->
-					<div class="button_wrapper rgb_effect" id="open">
-						<button class="rgb_button" onclick="openMessae()">
-							<i class="fas fa-arrow-alt-circle-right fa-5x"></i>
-						</button>
-					</div>
-
-					<div class="row">
-						<div class="column">
-							<li>
-								<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-							</li>
-						</div>
-						<div class="column">
-							<li>
-								<a href="#" target="_blank"
-									><i class="fab fa-github-alt"></i
-								></a>
-							</li>
-						</div>
-						<div class="column">
-							<li>
-								<a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
-							</li>
-						</div>
+					<!-- Contact Icons -->
+					<div class="contact_icons">
+						<a href="https://twitter.com/maalslab" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://github.com/MAALsLAB" target="_blank"><i class="fab fa-github-alt"></i></a>
+						<a href="mailto:maalslab@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
 					</div>
 				</article>
 				<!-- Scree Overlay to Dimm main contetn When Side Message is Opend -->
@@ -99,28 +75,17 @@
 		<!-- The main footer that is used across all the pages of the website -->
 		<footer>
 			<p>
-				Built with html, css and JS. Hosted on Netlify. The code is open source
-				and available at Github
-				<a
-					rel="license"
-					target="_blank"
-					href="http://creativecommons.org/licenses/by/4.0/"
-				>
+				Built with html, css and JS. Hosted on Netlify. The code is open source and available at Github
+				<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">
 					<img
 						alt="Creative Commons License"
 						style="border-width: 0"
 						src="https://i.creativecommons.org/l/by/4.0/80x15.png"
 					/>
 				</a>
-				<a href="https://maalslab.github.io/" target="_blank">
-					MAAL's LAB<br />
-				</a>
+				<a href="https://maalslab.github.io/" target="_blank"> MAAL's LAB<br /> </a>
 				This work is licensed under a
-				<a
-					rel="license"
-					target="_blank"
-					href="http://creativecommons.org/licenses/by/4.0/"
-				>
+				<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">
 					Creative Commons Attribution 4.0 International License </a
 				>.
 			</p>

@@ -104,8 +104,37 @@ body {
 }
 
 /********************************************
+																Introduction
+********************************************/
+.introduction {
+	color: lightblue;
+	font-family: "Exo", sans-serif;
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.introduction h1 {
+	font-size: 5em;
+	line-height: 2em;
+}
+
+.introduction h2 {
+	font-size: 2em;
+}
+/********************************************
 																	RGB Button
 ********************************************/
+
+.RGB_position {
+	position: absolute;
+	top: 200px;
+	left: 250px;
+	width: fit-content;
+}
+
 .rgb_button {
 	background-color: transparent;
 	border-radius: 50%;
@@ -234,4 +263,25 @@ body {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+/********************************************
+																Contact Icons
+********************************************/
+.contact_icons {
+	overflow: hidden;
+	background-color: transparent;
+	width: fit-content;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.contact_icons a {
+	display: inline-block;
+	color: yellowgreen;
+	padding: 0 16px;
+	text-decoration: none;
+	font-size: 40px;
 }
