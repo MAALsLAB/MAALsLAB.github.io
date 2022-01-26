@@ -110,6 +110,7 @@ input {
 }
 
 input[type="search"] {
+  color: black;
   flex: 3;
 }
 
@@ -136,14 +137,27 @@ aside {
   background-color: #15181a;
 }
 
+aside ul {
+  padding-left: 0px;
+}
+
 aside li {
   padding-bottom: 10px;
   list-style: none;
+  border-bottom: 3px solid tomato;
+  border-bottom-right-radius: 10px;
 }
 
 aside a {
   text-decoration: none;
   color: #74e76a;
+}
+
+aside h2 {
+  border-bottom: 7px solid springgreen;
+  border-left: 2px solid springgreen;
+  border-right: 2px solid springgreen;
+  border-radius: 10px;
 }
 
 footer {

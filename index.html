@@ -22,25 +22,36 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
+        <li><a href="#">Skill Set</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
       <!-- A Search form is another common non-linear way to navigate through a website. -->
 
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
+      <form id="search-form">
+        <input id="query" type="search" name="q" placeholder="Search google" />
+        <input id="go" type="submit" value="Go!" />
       </form>
     </nav>
 
     <!-- Here is our page's main content -->
     <main>
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#subsection-one">Subsection 1</a></li>
+          <li><a href="#subsection-two">Subsection 2</a></li>
+        </ul>
+      </aside>
+
       <!-- It contains an article -->
       <article>
-        <h2>Article heading</h2>
+        <h2>Home</h2>
 
+        <h3 id="introduction">Introduction</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
           lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
@@ -49,8 +60,7 @@
           congue enim, ut porta lorem lacinia consectetur.
         </p>
 
-        <h3>Subsection</h3>
-
+        <h3 id="subsection-one">Subsection 1</h3>
         <p>
           Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
           dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
@@ -63,8 +73,7 @@
           Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
         </p>
 
-        <h3>Another subsection</h3>
-
+        <h3 id="subsection-two">Subsection 2</h3>
         <p>
           Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
           soclis natoque penatibus et manis dis parturient montes, nascetur
@@ -79,19 +88,6 @@
           diam iaculis velit, is fringille sem nunc vet mi.
         </p>
       </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul>
-      </aside>
     </main>
 
     <!-- And here is our main footer that is used across all the pages of our website -->
@@ -99,5 +95,19 @@
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
+
+    <!-- Script to run the serach bar -->
+    <script>
+      const f = document.getElementById("search-form");
+      const q = document.getElementById("query");
+      const searchEngine = "https://www.google.com/search?q=";
+      function submitted(event) {
+        event.preventDefault();
+        const url = searchEngine + q.value;
+        const win = window.open(url, "_blank");
+        win.focus();
+      }
+      f.addEventListener("submit", submitted);
+    </script>
   </body>
 </html>
