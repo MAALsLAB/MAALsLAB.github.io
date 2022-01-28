@@ -1,0 +1,89 @@
+/* Navigatin bar */
+#navbar {
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+#navbar a:hover {
+  font-weight: 1000;
+}
+
+.active {
+  font-weight: 1000;
+}
+
+/* The sticky class is added to 
+  the navbar with JS when it 
+  reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* page's main content */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 700px) 1fr;
+}
+
+.grid * {
+  grid-column: 2 / 3;
+}
+
+.greeting-text {
+  font-size: 5rem;
+  line-height: 80px;
+}
+
+.bio {
+  margin-top: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+#homepage-arrow {
+  margin-left: 3px;
+  margin-top: 1px;
+  font-size: 14pt;
+}
+
+#call-to-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  max-width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #3e8ed0;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:hover {
+  color: #fff;
+  border-color: #3e8ed0;
+  background-color: #3e8ed0;
+}
+
+footer {
+  margin-top: 10px;
+}
