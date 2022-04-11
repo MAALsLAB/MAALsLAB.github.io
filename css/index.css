@@ -377,6 +377,10 @@ select {
 }
 
 @media (max-width: 35rem) {
+  .grid-container--home {
+    margin-top: 3em;
+  }
+
   .primary-navigation {
     --underline-gap: 0.5rem;
     position: fixed;
