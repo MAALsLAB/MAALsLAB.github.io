@@ -556,13 +556,6 @@ body {
   }
 }
 
-cite > a {
-  text-decoration: none;
-  color: hsl(var(--clr-light));
-  padding: 0.1em 0.1em;
-  border-radius: 10px;
-}
-
 /* Credite
 background image:
 Photo by TimSon Foox from Pexels
