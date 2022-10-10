@@ -554,23 +554,20 @@ body {
 
 /* Home Page */
 .home {
-  /* background-image: url(../assets/home/background-home-desktop.jpg); */
+  background-blend-mode: overlay;
+  background-image: url(../assets/home/background-home-desktop.jpg);
 }
 
 @media (min-width: 35rem) {
   .home {
-    background-position: center center;
-    /* background-image: url(../assets/home/background-home-desktop.jpg); */
+    background-blend-mode: overlay;
+    /* background-position: center center; */
+    background-image: url(../assets/home/circuit-board-973311.jpg);
   }
 }
 
 @media (min-width: 45rem) {
   .home {
-    /* background-image: url(../assets/home/background-home-desktop.jpg); */
+    background-image: url(../assets/home/motherboard-232515.jpg);
   }
 }
-
-/* Credite
-background image:
-Photo by TimSon Foox from Pexels
- */
