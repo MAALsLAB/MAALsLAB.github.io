@@ -409,9 +409,9 @@ select {
     transform: translateX(0);
   }
 
-  /* .primary-navigation.underline-indicators > .active {
+  .primary-navigation.underline-indicators > .active {
     border: 0;
-  } */
+  }
 
   .mobile-nav-toggle {
     display: block;
@@ -476,6 +476,7 @@ select {
   border: 0;
   cursor: pointer;
   border-bottom: 0.2rem solid hsl(var(--clr-highlight) / 0);
+  background: transparent;
 }
 
 .underline-indicators > *:hover,
@@ -557,7 +558,10 @@ body {
   background-blend-mode: overlay;
   background-image: url(../assets/home/background-home-desktop.jpg);
 }
-
+.contact {
+  background-blend-mode: overlay;
+  background-image: url(../assets/contact/pexels-opt-lasers-7097316.jpg);
+}
 /* .destination {
   background-image: url(./assets/destination/background-destination-mobile.jpg);
 } */
@@ -577,6 +581,11 @@ body {
     background-image: url(../assets/home/circuit-board-973311.jpg);
   }
 
+  .contact {
+    background-blend-mode: overlay;
+    background-image: url(../assets/contact/pexels-marko-blazevic-2708981.jpg);
+  }
+
   /* .destination {
     background-image: url(./assets/destination/background-destination-tablet.jpg);
   } */
@@ -593,6 +602,11 @@ body {
 @media (min-width: 45rem) {
   .home {
     background-image: url(../assets/home/motherboard-232515.jpg);
+  }
+
+  .contact {
+    background-blend-mode: overlay;
+    background-image: url(../assets/contact/pexels-pixabay-355904.jpg);
   }
 
   /* .destination {
@@ -656,6 +670,16 @@ body {
 
 .distination-meta p {
   font-size: 1.75rem;
+}
+
+.distination-meta a {
+  color: hsl(var(--clr-paragraph));
+}
+
+.distination-meta a:hover {
+  /* text-decoration: none; */
+  color: hsl(var(--clr-highlight));
+  text-decoration: none;
 }
 
 /* crew layout */
@@ -842,6 +866,12 @@ body {
   }
   /* ---------------- */
 }
+
+#contact-image {
+  /* max-width: 100%; */
+  padding: 50px;
+}
+
 /* .technology__container .technology__content {
   height: 100%;
   display: grid;

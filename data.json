@@ -1,0 +1,56 @@
+{
+	"projects": [
+		{
+		  "name": "project name",
+		  "images": "project image path",
+		  "description": "project description",
+		  "client": "client name",
+		  "status": "project status"
+		}
+	  ],
+	"services": [{}],
+	"store": [{}],
+	"about": [{}],
+	"contact": [
+		{
+		  "name": "Gmail",
+		  "images": "../assets/contact/gmail.webp",
+		  "description": "If you have any questions feel free to contact me at any time. I would be more than happy to hear any business or project ideas from you.",
+		  "connect_type":"Email", 
+		  "account": "maalslab@gmail.com",
+		  "action_name": "Send Me An Email", 
+		  "connect-url": "mailto:maalslab@gmail.com",
+		  "connect": "Compose"
+		},
+		{
+			"name": "GitHub",
+			"images": "../assets/contact/Octocat.png",
+			"description": "GitHub is the place where this website is hosted, and is the place wereh I publish my project repositories.",
+			"connect_type":"Username", 
+			"account": "MAAL@MAALsLAB",
+			"action_name": "Follow Me", 
+			"connect-url": "https://github.com/MAALsLAB",
+			"connect": "OK Let's go"
+		  },
+		  {
+			"name": "Hackaday",
+			"images": "../assets/contact/hackaday-logo.png",
+			"description": "My hacks are listed with explanations, and some of my tutorials get published there. Hackaday is the most loveable place I spent most of my time there.",
+			"connect_type":"Screen name", 
+			"account": "MAAL's LAB",
+			"action_name": "If you thrilled", 
+			"connect-url": "https://hackaday.io/MAALsLAB",
+			"connect": "Have a look"
+		  },
+		  {
+			"name": "Instagram",
+			"images": "../assets/contact/Instagram_Glyph_Gradient.png",
+			"description": "I share the latest photos and videos on my Instagram account during the development process, If you'd like to see my latest update you can follow me there",
+			"connect_type":"Username", 
+			"account": "@maalslab",
+			"action_name": "For tech savvies", 
+			"connect-url": "https://www.instagram.com/maalslab/",
+			"connect": "Follow Me"
+		  }
+	  ]
+  }

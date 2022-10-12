@@ -24,9 +24,10 @@
 
     <title>MAAL's LAB</title>
     <script src="../js/navigation.js" defer></script>
+    <script src="../js/contact.js" defer></script>
   </head>
 
-  <body class="home">
+  <body class="contact">
     <a class="skip-to-main-content" href="#main">Skip to main content</a>
     <header class="primary-header flex">
       <!-- logo -->
@@ -54,50 +55,157 @@
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../index.html"
-              ><span aria-hidden="true">00</span>Home</a
+              >Home</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../pages/projects.html"
-              ><span aria-hidden="true">01</span>Projects</a
+              >Projects</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../pages/services.html"
-              ><span aria-hidden="true">02</span>Services</a
+              >Services</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../pages/store.html"
-              ><span aria-hidden="true">03</span>STORE</a
+              >STORE</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../pages/about.html"
-              ><span aria-hidden="true">04</span>About</a
+              >About</a
             >
           </li>
           <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="../pages/contact.html"
-              ><span aria-hidden="true">05</span>Contacts</a
+              >Contacts</a
             >
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="main" class="grid-container grid-container--home">
-      <img src="http://www.vosp.us/wp-content/uploads/Under.jpg" alt="" />
+    <main id="main" class="grid-container grid-container--destination flow">
+      <h1 class="numbered-title">You can contact me by ...</h1>
+
+      <!----------------------------->
+      <!-- Contact Platform Images -->
+      <!----------------------------->
+      <picture>
+        <img id="contact-image" />
+      </picture>
+      <!--------------------------------->
+      <!-- EOF Contact Platform Images -->
+      <!--------------------------------->
+
+      <!-------------->
+      <!-- Tab List -->
+      <!-------------->
+      <div
+        class="tab-list underline-indicators flex"
+        role="tablist"
+        aria-label="destination list"
+      >
+        <!-- Gmail -->
+        <button
+          onclick="myFunction1()"
+          id="moon"
+          aria-selected="true"
+          role="tab"
+          aria-controls="moon-tab"
+          data-image="moon-image"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          tabindex="0"
+        >
+          Gmail
+        </button>
+        <!-- GitHub -->
+        <button
+          onclick="myFunction2()"
+          id="mars"
+          aria-selected="false"
+          role="tab"
+          aria-controls="mars-tab"
+          data-image="mars-image"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          tabindex="-1"
+        >
+          GitHub
+        </button>
+        <!-- Hackaday -->
+        <button
+          onclick="myFunction3()"
+          id="europa"
+          aria-selected="false"
+          role="tab"
+          aria-controls="europa-tab"
+          data-image="europa-image"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          tabindex="-1"
+        >
+          Hackaday
+        </button>
+        <!-- Instagram -->
+        <button
+          onclick="myFunction4()"
+          id="titan"
+          aria-selected="false"
+          role="tab"
+          aria-controls="titan-tab"
+          data-image="titan-image"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          tabindex="-1"
+        >
+          Instagram
+        </button>
+      </div>
+      <!------------------>
+      <!-- EOF Tab List -->
+      <!------------------>
+
+      <!--------------------------->
+      <!-- Contact Platform info -->
+      <!--------------------------->
+      <!-- Moon -->
+      <article
+        class="destination-info flow"
+        id="moon-tab"
+        tabindex="0"
+        role="tabPanel"
+      >
+        <h2 id="des-name" class="fs-800 ff-serif"></h2>
+        <p id="des-description"></p>
+        <div class="distination-meta flex">
+          <div>
+            <h3 id="connect-type" class="text-accent fs-200 uppercase"></h3>
+            <p id="des-distance" class="ff-sans-cond"></p>
+          </div>
+          <div>
+            <h3
+              id="connect-action-name"
+              class="text-accent fs-200 uppercase"
+            ></h3>
+            <a id="connect-url" href="" target="_blank"
+              ><p id="des-travel" class="ff-serif"></p
+            ></a>
+          </div>
+        </div>
+      </article>
+      <!------------------------------->
+      <!-- EOF Contact Platform info -->
+      <!------------------------------->
     </main>
   </body>
 </html>
